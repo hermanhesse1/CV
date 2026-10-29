@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CV of Alexandru Cristian Calin, mathematician (MSc LSE).">
+<title>Alexandru Calin CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+  /* Layout: one A4-proportioned sheet on a quiet desk, a slim toolbar above it. */
+  :root {
+    --desk: #e9ebee;
+    --sheet: #ffffff;
+    --ink: #111214;
+    --muted: #4a4f57;
+    --rule: #111214;
+    --btn-bg: #1f2a37;
+    --btn-fg: #ffffff;
+    --btn-ghost: #d8dce2;
+    --serif: "Tinos", "Times New Roman", Times, serif;
+    --sans: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --desk: #121417; --sheet: #1c1f23; --ink: #e9eaec; --muted: #a9afb8;
+      --rule: #c9cdd3; --btn-bg: #e9eaec; --btn-fg: #121417; --btn-ghost: #2c3138;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --desk: #121417; --sheet: #1c1f23; --ink: #e9eaec; --muted: #a9afb8;
+    --rule: #c9cdd3; --btn-bg: #e9eaec; --btn-fg: #121417; --btn-ghost: #2c3138;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--desk);
+    color: var(--ink);
+    font-family: var(--serif);
+    padding-block: 24px 48px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  .wrap { max-width: 840px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
+
+  .bar { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; align-items: center; font-family: var(--sans); }
+  .bar .note { margin-right: auto; font-size: 13px; color: var(--muted); min-height: 1em; }
+  .btn { text-decoration: none; display: inline-block;
+   
+    font: 600 14px/1 var(--sans); border: 0; border-radius: 6px; padding: 10px 14px; cursor: pointer;
+    background: var(--btn-ghost); color: var(--ink);
+  }
+  .btn.primary { background: var(--btn-bg); color: var(--btn-fg); }
+  .btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+  .sheet {
+    background: var(--sheet);
+    padding: 44px 52px 52px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.08), 0 8px 28px rgba(0,0,0,.08);
+    font-size: 15.5px; line-height: 1.38;
+    min-width: 0;
+  }
+
+  header { text-align: center; margin-bottom: 6px; }
+  h1 { font-size: 23px; font-weight: 700; letter-spacing: .02em; margin: 0 0 4px; text-wrap: balance; }
+  .contact { font-size: 13.5px; display: flex; flex-wrap: wrap; justify-content: center; gap: 2px 8px; }
+  .contact span + span::before { content: "|"; margin-right: 8px; color: var(--muted); }
+
+  section { margin-top: 12px; }
+  h2 {
+    font-size: 15.5px; font-weight: 700; margin: 0 0 6px; padding-bottom: 2px;
+    border-bottom: 1px solid var(--rule); letter-spacing: .01em;
+  }
+  .entry { margin-top: 6px; }
+  .row { display: flex; flex-wrap: wrap; justify-content: space-between; column-gap: 16px; }
+  .row strong { font-weight: 700; }
+  .row .sub { font-weight: 400; }
+  .row .date { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .role { font-style: italic; }
+  p { margin: 1px 0 0; }
+  ul { margin: 3px 0 0; padding-left: 20px; }
+  li { margin: 2px 0; padding-left: 2px; }
+  li::marker { font-size: .85em; }
+
+  @media (max-width: 560px) {
+    .sheet { padding: 24px 18px 28px; font-size: 15px; }
+    h1 { font-size: 20px; }
+    .contact span + span::before { display: none; }
+    .contact { flex-direction: column; gap: 0; }
+    .row .date { color: var(--muted); }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="bar">
+    <span class="note" id="note" aria-live="polite"></span>
+    <button class="btn" id="copy" type="button">Copy email</button>
+    <a class="btn primary" href="Alexandru_Calin_CV.pdf" download>Download PDF</a>
+  </div>
+
+  <article class="sheet">
+    <header>
+      <h1>ALEXANDRU CRISTIAN CALIN</h1>
+      <div class="contact">
+        <span id="email">alexandrucalin12@gmail.com</span>
+        <span>+44 7789 946864</span>
+        <span>UK settled status</span>
+        <span>London, UK</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>EDUCATION</h2>
+      <div class="entry">
+        <div class="row"><strong>London School of Economics</strong><span class="date">Sep 2024 to Sep 2025</span></div>
+        <p><i>MSc Applicable Mathematics.</i> Dissertation in multiagent reinforcement learning in energy markets, published on SSRN.<br>
+        Modules: reinforcement learning, machine learning and data mining, game theory, algorithms.</p>
+      </div>
+      <div class="entry">
+        <div class="row"><strong>Imperial College London</strong><span class="date">Jul 2024 to Aug 2024</span></div>
+        <p><i>Summer Research Student, Machine Learning and Quantitative Finance.</i> Built a time series model in R to forecast energy commodity prices; ran stability diagnostics and traced the drivers of forecast error.</p>
+      </div>
+      <div class="entry">
+        <div class="row"><strong>University of Manchester</strong><span class="date">Sep 2020 to Jun 2024</span></div>
+        <p><i>BSc Mathematics.</i> Dissertation in algorithmic game theory; modules in probability, statistical inference, numerical analysis and time series.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>EXPERIENCE</h2>
+      <div class="entry">
+        <div class="row"><strong>TikTok (ByteDance)</strong><span class="date">Sep 2025 to Present</span></div>
+        <div class="role">Strategy and Operations Manager, TikTok Live, London</div>
+        <ul>
+          <li>Built a new partner pipeline across France, Spain, the UK and Romania, qualifying each prospect by revenue potential.</li>
+          <li>Managed relationships with the leadership of 55 partner businesses, running discovery conversations and regular executive reviews to turn their goals and performance data into tailored growth plans; the best performing campaign now generates over $100k a month.</li>
+          <li>Researched and compared four European markets to judge where growth potential was highest.</li>
+          <li>Designed incentive experiments, measured them against a baseline and dropped three that did not change partner behaviour, refocusing effort on what worked.</li>
+          <li>Built SQL and Python segmentation of the portfolio of 55 partner businesses to rank them by revenue potential and find the highest value segments.</li>
+          <li>Built AI workflows with large language models that analysed partner data and drafted first versions of growth strategies, checking and correcting outputs before use.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="row"><strong>Regnum Aegyssus</strong><span class="date">Jun 2025 to Sep 2025</span></div>
+        <div class="role">Financial Analyst, Romania</div>
+        <ul>
+          <li>Modelled volatility transmission across Eastern European equity markets in Python using rolling window multivariate estimation; the research is under journal review.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>RESEARCH AND PROJECTS</h2>
+      <div class="entry">
+        <div class="row"><span><strong>Do AI Agents Play Like People?</strong> <span class="sub">(independent project, in progress)</span></span><span class="date">Oct 2026 to Present</span></div>
+        <ul>
+          <li>Comparing how humans, bounded rationality models (QRE, level k, cognitive hierarchy), reinforcement learning agents and open weight language models play the same 2,416 two player games, using a public dataset of 93,460 human decisions (Zhu et al., 2025).</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="row"><span><strong>Multiagent Reinforcement Learning in Energy Markets</strong> <span class="sub">(LSE MSc dissertation, SSRN)</span></span><span class="date">2025</span></div>
+        <ul>
+          <li>Built a multi agent energy market environment in Python and implemented Q learning from first principles; analysed how weaker agents shape outcomes for the whole market.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="row"><span><strong>Credit Default Prediction Model</strong> <span class="sub">(LSE)</span></span><span class="date">May 2025 to Jun 2025</span></div>
+        <ul>
+          <li>Compared neural networks, k nearest neighbours and random forests on 30,000 credit card records, reaching an AUC-ROC of 0.82 through feature engineering and hyperparameter tuning.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="row"><span><strong>Volatility Spillovers in Central European Markets</strong> <span class="sub">(SSRN working paper)</span></span></div>
+        <ul>
+          <li>Estimated GARCH, BEKK and DCC models in R to measure how volatility spread between the German, Polish, Hungarian and Czech stock markets after the war in Ukraine began.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>SKILLS</h2>
+      <ul>
+        <li><strong>Programming and data:</strong> Python (NumPy, pandas, scikit learn, statsmodels, matplotlib), R, SQL, Excel, Git, LaTeX.</li>
+        <li><strong>Machine learning:</strong> reinforcement learning (Q learning, policy gradients), multi agent systems, neural networks, random forests, kNN, time series forecasting; model evaluation (AUC-ROC, stability diagnostics, error analysis).</li>
+        <li><strong>Quantitative:</strong> probability theory, statistical inference, numerical analysis, time series analysis, volatility modelling (GARCH, BEKK, DCC), game theory, simulation.</li>
+        <li><strong>Languages:</strong> English (fluent), Romanian (native).</li>
+      </ul>
+    </section>
+  </article>
+</div>
+
+<script>
+  const note = document.getElementById('note');
+  const say = (t) => { note.textContent = t; };
+
+  document.getElementById('copy').addEventListener('click', async () => {
+    const email = 'alexandrucalin12@gmail.com';
+    try {
+      await navigator.clipboard.writeText(email);
+      say('Email copied');
+    } catch (e) {
+      const r = document.createRange();
+      r.selectNodeContents(document.getElementById('email'));
+      const s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      say('Email selected. Press Ctrl+C or Cmd+C to copy.');
+    }
+  });
+
+</script>
+</body>
+</html>
